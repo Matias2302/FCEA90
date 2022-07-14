@@ -21,7 +21,8 @@ header{
     z-index: 100;
 }
 section{
-  width:90%;
+  width:80%;
+  margin:auto;
 }
 
 .container{
@@ -157,7 +158,7 @@ header.scrolled{
 
     header{
         display:grid;
-        grid-template-columns: 1fr minmax(400px, 2fr) minmax(600px, 3fr) 1fr;
+        grid-template-columns: 200px minmax(400px, 2fr) minmax(600px, 3fr) 1fr;
     }
 
     .logo{
@@ -372,6 +373,40 @@ header.scrolled{
 }
 
 /*---------------------*/
+
+/*====================CRONOGRAMA========================*/
+#cronograma{
+  padding-top:2em;
+}
+
+.color-borde{
+  border-left: solid #ea514d  3px;
+}
+
+.content-sidebar{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.ul-padding{
+  padding:20px;
+}
+
+.titulo{
+  flex:1 1 30%;
+  padding:0.5em;
+}
+
+.descripcion{
+  flex: 1 1 70%;
+  padding: 0.5em;
+  line-height: 1.3em;
+}
+
+.tarjeta-color{
+  background-color: #f7f7f7;
+}
 
 /*Linea del tiempo*/
 /*----------
