@@ -23,18 +23,17 @@ header{
     z-index: 100;
 }
 #gallery_1, #intro, #cronograma, #testimonios{
- margin-top:5em;
+ 
 }
 
 .container{
   width:80%;
   margin:auto;
-  padding-top: 3em;
+  padding: 2em 0 2em 0;
 }
 
 .fondo-gris{
   background-color: #e8e7dc;
-  border-radius: 25px;
 }
 
 i{
@@ -43,7 +42,7 @@ i{
 
 .titulo-grande{
   font-size: 1.8rem;
-  color: #f08372;
+  color: #ea514d;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -134,10 +133,9 @@ header.scrolled{
     text-align: center;
     color:#fff;
     /* background: #E55749; */
-    margin-bottom:100px;
     position:relative;
     overflow:hidden;
-    width:100vw;
+   
     min-height: 100vh;
     
 }
@@ -205,7 +203,7 @@ header.scrolled{
 /*===parallax====*/
 .parallax{
   background-attachment: fixed;
-  background-image:url(../assets/img/pic02.jpg);
+  background-image:url(../assets/img/pic07.jpg);
   background-position: center center;
   background-size: cover;
   height: 500px;
@@ -230,6 +228,7 @@ header.scrolled{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap:10px;
+  margin-top: 2em;
 }
 
 .item-video img{
@@ -242,7 +241,6 @@ header.scrolled{
 .video-item {
   background: rgba(255, 255, 255, 0.075);
   border-radius: 4px;
-  margin: 0 0 2em 0;
   overflow: hidden;
   position: relative;
 }
@@ -494,7 +492,7 @@ header.scrolled{
 
 
 .color-borde{
-  border-left: solid #ea514d  3px;
+  border-left: solid #f08372  4px;
 }
 
 .content-sidebar{
@@ -511,7 +509,7 @@ header.scrolled{
   flex:1 1 30%;
   padding:0.5em;
   font-size: 1.3rem;
-  color: #ea514d;
+  color: #f08372;
 }
 
 .descripcion{
@@ -644,7 +642,7 @@ ul.icons {
 
     .titulo-grande{
       font-size: 2.5rem;
-      color: #f08372;
+      color: #ea514d;
       font-weight: 500;
       text-transform: uppercase;
     }

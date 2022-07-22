@@ -23,8 +23,7 @@
                 <li><a href="#intro">Portada</a></li>
                 <li><a href="#gallery_1">¿Sabías qué?</a></li>
                 <li><a href="#cronograma">Cronograma</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                
+                <li><a href="#testimonios">Testimonios</a></li>               
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -83,7 +82,7 @@
             <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">×</span>
-                    <iframe class="videos-modal" width="100%" height="80%" src="https://www.youtube.com/embed/zy9OCPvJTPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video" class="videos-modal" width="100%" height="80%" src="https://www.youtube.com/embed/zy9OCPvJTPU?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <!-- The Modal -->
@@ -91,7 +90,7 @@
             <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">×</span>
-                    <iframe  width="100%" height="80%" src="https://www.youtube.com/embed/YjiNG7riSHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video2" class="player-video" width="100%" height="80%" src="https://www.youtube.com/embed/YjiNG7riSHA?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <!-- The Modal -->
@@ -99,7 +98,7 @@
             <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">×</span>
-                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/Cx-xGwlG9us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video3" class="player-video" width="100%" height="80%" src="https://www.youtube.com/embed/Cx-xGwlG9us?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -124,7 +123,7 @@
                         <h5>Entrega de títulos</h5>
                         <br>
                         <p><i>Martes 16 de agosto  - 19 horas</i></p>
-                        <p><i>Paraninfo de la Universidad de la República ubicado en Av. 18 de Julio 1824</i>  </p>                     
+                        <p><i>Paraninfo de la Universidad de la República ubicado en Av. 18 de Julio 1824.</i>  </p>                     
                     </div>
                 </div>
                 <div class="content-sidebar">
@@ -138,17 +137,20 @@
                             <li>Victoria Tenembaun, docente IECON-FCEA</li>
                             <li>Paola Azar, docente IECON-FCEA</li>
                         </ul>
-                        <h5>Enseñar  y aprender en privación de libertad. </h5>
+                        <h5>Enseñar  y aprender en privación de libertad </h5>
                         <ul class="ul-padding">
                             <li>Cecilia Garibaldi, Coordinadora de Enseñanza en Cárceles</li>
-                            <li>Ignacio García, Coordinador de Enseñanza en Cárceles. </li>
-                            <li>Experiencia de estudiantes y docentes.</li>
+                            <li>Ignacio García, Coordinador de Enseñanza en Cárceles</li>
+                            <li>Experiencia de estudiantes y docentes</li>
                         </ul>
                         <h5>Hacer extensión en FCEA: miradas, avances y desafíos desde la Unidad de Extensión</h5>
-                        <ul>Mariela Lindner, Coordinadora de la Unidad de Extensión </ul>
+                        <ul class="ul-padding">
+                            <li>Mariela Lindner, Coordinadora de la Unidad de Extensión </li>
+                            <li>Mariana García Grisoni, docente del Programa de Extensión Colmena</li>
+                        </ul>
                         <br>
                         <p><i>Miércoles 17 de agosto - 18:30  horas</i></p>
-                        <p><i>Salón 6 de la Facultad de Ciencias Económicas y de Administración, entrada por Eduardo Acevedo.  </i></p>
+                        <p><i>Salón 6 de la Facultad de Ciencias Económicas y de Administración, entrada por Eduardo Acevedo. </i></p>
                     </div>               
                 </div>
                 <div class="content-sidebar">
@@ -259,48 +261,46 @@
                 <!-- Modal content -->
                 <div class="modal4-content">
                     <span class="close">×</span>
-                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/sTInh64xzbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video4" width="100%" height="80%" src="https://www.youtube.com/embed/sTInh64xzbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/iNDztIYSVkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video5" width="100%" height="80%" src="https://www.youtube.com/embed/iNDztIYSVkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/kSIuhGamqWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video6" width="100%" height="80%" src="https://www.youtube.com/embed/kSIuhGamqWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/EoljrU14ZP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video7" width="100%" height="80%" src="https://www.youtube.com/embed/EoljrU14ZP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/gMMCaEcMDbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video8" width="100%" height="80%" src="https://www.youtube.com/embed/gMMCaEcMDbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/NXkksBomJxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video9" width="100%" height="80%" src="https://www.youtube.com/embed/NXkksBomJxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    </section>
-    
-   
+    </section>  
     <footer id="footer">
         <div class="container">
             <ul class="icons">
