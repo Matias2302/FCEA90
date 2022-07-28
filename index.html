@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1FT3F17WD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G1FT3F17WD');
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -81,7 +90,7 @@
             <div class="modal">
             <!-- Modal content -->
                 <div class="modal-content">
-                    <span class="close">×</span>
+                    <span id="close-modal" class="close">×</span>
                     <iframe id="player-video" class="videos-modal" width="100%" height="80%" src="https://www.youtube.com/embed/zy9OCPvJTPU?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -113,17 +122,19 @@
                         <h4>¿De dónde venimos? <br> Hitos históricos de FCEA</h4>
                     </div>
                     <div class="descripcion tarjeta-color">
+                        <h4 class="fecha">Martes 16 de agosto</h4>
                         <h5>Decanos de la Facultad de Ciencias Económicas y de Administración</h5>
                         <ul class="ul-padding">
-                            <li>Danilo Astori, ex Decano de FCEA</li>
-                            <li>Miguel Galmes, ex Decano de FCEA</li>
-                            <li>Rodrigo Arim, Rector de la Universidad de la República </li>
-                            <li>Jorge Xavier, actual Decano de la Facultad de Ciencias Económicas y de Administración </li>
+                            <li>Danilo Astori, exdecano de FCEA</li>
+                            <li>Miguel Galmes, exdecano de FCEA</li>
+                            <li>Rodrigo Arim, rector de la Universidad de la República y exdecano de FCEA </li>
+                            <li>Jorge Xavier, actual decano de la Facultad de Ciencias Económicas y de Administración </li>
+                            <li>Modera: Silvia Rodriguez, Profesora Agregada G4 del Instituto de Estadística</li>
                         </ul>
                         <h5>Entrega de títulos</h5>
                         <br>
-                        <p><i>Martes 16 de agosto  - 19 horas</i></p>
-                        <p><i>Paraninfo de la Universidad de la República ubicado en Av. 18 de Julio 1824.</i>  </p>                     
+                        <p><i>19 horas</i></p>
+                        <p><i>Paraninfo de la Universidad de la República ubicado en Av. 18 de Julio 1824</i>  </p>                     
                     </div>
                 </div>
                 <div class="content-sidebar">
@@ -131,26 +142,41 @@
                         <h4>¿Quiénes somos? <br> Reflexiones sobre el presente de FCEA</h4>
                     </div>
                     <div class="descripcion tarjeta-color">
+                        <h4 class="fecha">Miércoles 17 de agosto</h4>
                         <h5>Construyendo una FCEA más igualitaria: situación actual y principales desafíos</h5>
                         <ul class="ul-padding">
                             <li>Victoria Gambetta, docente de Udelar y responsable del Diagnóstico de Género de la FCEA</li>
                             <li>Victoria Tenembaun, docente IECON-FCEA</li>
                             <li>Paola Azar, docente IECON-FCEA</li>
                         </ul>
+                        <p><i>18 horas</i></p>
+                        <br>
                         <h5>Enseñar  y aprender en privación de libertad </h5>
                         <ul class="ul-padding">
                             <li>Cecilia Garibaldi, Coordinadora de Enseñanza en Cárceles</li>
                             <li>Ignacio García, Coordinador de Enseñanza en Cárceles</li>
                             <li>Experiencia de estudiantes y docentes</li>
                         </ul>
+                        <p><i>19 horas</i></p>
+                        <br>
                         <h5>Hacer extensión en FCEA: miradas, avances y desafíos desde la Unidad de Extensión</h5>
                         <ul class="ul-padding">
                             <li>Mariela Lindner, Coordinadora de la Unidad de Extensión </li>
                             <li>Mariana García Grisoni, docente del Programa de Extensión Colmena</li>
                         </ul>
+                        <p><i>20 horas</i></p>
                         <br>
-                        <p><i>Miércoles 17 de agosto - 18:30  horas</i></p>
-                        <p><i>Salón 6 de la Facultad de Ciencias Económicas y de Administración, entrada por Eduardo Acevedo. </i></p>
+                        <h5>Cometidos y líneas de acción de la Unidad de Apoyo a la Enseñanza</h5>
+                        <ul class="ul-padding">
+                            <li>Inés Urrestarazu, Coordinadora de Apoyo a la Enseñanza</li>
+                            <li>Gabriela Bello, responsable del Programa de Apoyo a las Generaciones de Ingreso y Orientación Curricular, referente de la línea Inclusión Educativa</li>
+                            <li>Natalia Correa, referente del Programa de desarrollo pedagógico docente</li>
+                            <li>Elena Vernazza, referente de la Encuesta de Percepción Estudiantil</li>
+                            <li>Cecilia Pérez, administradora del EVA</li>
+                        </ul>
+                        <p><i>21 horas</i></p>
+                        <br>
+                        <p><i>Salón 6 de la Facultad de Ciencias Económicas y de Administración, entrada por Eduardo Acevedo</i></p>
                     </div>               
                 </div>
                 <div class="content-sidebar">
@@ -158,27 +184,31 @@
                         <h4>¿Hacia dónde vamos? <br> Desafíos de FCEA </h4>
                     </div>
                     <div class="descripcion tarjeta-color">
+                        <h4 class="fecha">Jueves 18 de agosto</h4>
                         <h5>Horizontes para la enseñanza de las ciencias económicas y de la administración</h5>
                         <ul class="ul-padding">
                             <li>Cr. Enrique Iglesias</li>
-                            <li>Modera: Jorge Xavier, Decano de FCEA</li>
+                            <li>Modera: Jorge Xavier, decano de FCEA</li>
                         </ul>
                         <h5>Entrega de placa del Colegio de Contadores en conmemoración del aniversario de FCEA</h5>
                         <br>
-                        <p><i>Jueves 18 de agosto - 19:00 horas</i></p>   
+                        <p><i>19 horas</i></p>   
                         <p><i>Salón 6 de la Facultad de Ciencias Económicas y de Administración, entrada por Eduardo Acevedo.</i></p>               
                     </div>        
                 </div>
                 <div class="content-sidebar">
                     <div class="titulo">
+                        
                         <h4>¡Feliz cumpleaños FCEA!</h4>
+                        
                     </div>
                     <div class="descripcion tarjeta-color">
+                        <h4 class="fecha">Viernes 19 de agosto</h4>
                         <h5>Actividades lúdicas</h5> 
                         <h5>Espectáculos en vivo</h5>
-                        <h5>Bienvenida generación segundo período 2022</h5>
+                        <h5>Bienvenida a la generación del segundo período 2022</h5>
                         <br>
-                        <p><i>Viernes 19 de agosto- 19:00 horas</i></p>
+                        <p><i>19 horas</i></p>
                         <p><i>Av. Gonzalo Ramírez 1926</i></p>    
                     </div>        
                 </div>
@@ -255,52 +285,209 @@
                         </p>              
                     </div> 
                 </div>
+                <div class="video-item">
+                    <div class="image fit myBtn">
+                        <img src="assets/img/Natalia.jpg" alt="" />
+                        <div class="arrow">
+                            <div class="icon fa-brands fa-youtube"></div>
+                        </div>
+                        <p class="caption">
+                            Testimonio Natalia da Silva - 90 años FCEA
+                        </p>              
+                    </div> 
+                </div>
+                <div class="video-item">
+                    <div class="image fit myBtn">
+                        <img src="assets/img/Matias.jpg" alt="" />
+                        <div class="arrow">
+                            <div class="icon fa-brands fa-youtube"></div>
+                        </div>
+                        <p class="caption">
+                            Testimonio Matías Maciel - 90 años FCEA
+                        </p>              
+                    </div> 
+                </div>
+                <div class="video-item">
+                    <div class="image fit myBtn">
+                        <img src="assets/img/Rita.jpg" alt="" />
+                        <div class="arrow">
+                            <div class="icon fa-brands fa-youtube"></div>
+                        </div>
+                        <p class="caption">
+                            Testimonio Rita Grisolia y María Arigón - 90 años FCEA
+                        </p>              
+                    </div> 
+                </div>
+                <div class="video-item">
+                    <div class="image fit myBtn">
+                        <img src="assets/img/Andrea.jpg" alt="" />
+                        <div class="arrow">
+                            <div class="icon fa-brands fa-youtube"></div>
+                        </div>
+                        <p class="caption">
+                            Testimonio Andrea Vigorito - 90 años FCEA
+                        </p>              
+                    </div> 
+                </div>
+                <div class="video-item">
+                    <div class="image fit myBtn">
+                        <img src="assets/img/Fabricio.jpg" alt="" />
+                        <div class="arrow">
+                            <div class="icon fa-brands fa-youtube"></div>
+                        </div>
+                        <p class="caption">
+                            Testimonio Fabricio Carpentieri - 90 años FCEA
+                        </p>              
+                    </div> 
+                </div>
+                <div class="video-item">
+                    <div class="image fit myBtn">
+                        <img src="assets/img/Gabriela.jpg" alt="" />
+                        <div class="arrow">
+                            <div class="icon fa-brands fa-youtube"></div>
+                        </div>
+                        <p class="caption">
+                            Testimonio Gabriela Cuadrado - 90 años FCEA
+                        </p>              
+                    </div> 
+                </div>
+                <div class="video-item">
+                    <div class="image fit myBtn">
+                        <img src="assets/img/Mahiara.jpg" alt="" />
+                        <div class="arrow">
+                            <div class="icon fa-brands fa-youtube"></div>
+                        </div>
+                        <p class="caption">
+                            Testimonio Mahiara Andrade - 90 años FCEA
+                        </p>              
+                    </div> 
+                </div>
             </div>
             <!--Modales testimonios-->
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal4-content">
                     <span class="close">×</span>
-                    <iframe id="player-video4" width="100%" height="80%" src="https://www.youtube.com/embed/sTInh64xzbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video4" width="100%" height="80%" src="https://www.youtube.com/embed/sTInh64xzbA?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe id="player-video5" width="100%" height="80%" src="https://www.youtube.com/embed/iNDztIYSVkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video5" width="100%" height="80%" src="https://www.youtube.com/embed/iNDztIYSVkQ?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe id="player-video6" width="100%" height="80%" src="https://www.youtube.com/embed/kSIuhGamqWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video6" width="100%" height="80%" src="https://www.youtube.com/embed/kSIuhGamqWc?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe id="player-video7" width="100%" height="80%" src="https://www.youtube.com/embed/EoljrU14ZP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video7" width="100%" height="80%" src="https://www.youtube.com/embed/EoljrU14ZP0?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe id="player-video8" width="100%" height="80%" src="https://www.youtube.com/embed/gMMCaEcMDbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video8" width="100%" height="80%" src="https://www.youtube.com/embed/gMMCaEcMDbM?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <iframe id="player-video9" width="100%" height="80%" src="https://www.youtube.com/embed/NXkksBomJxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="player-video9" width="100%" height="80%" src="https://www.youtube.com/embed/NXkksBomJxo?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal">
+                <!-- Modal content Natalia-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="player-video10" width="100%" height="80%" src="https://www.youtube.com/embed/BjbtK_thHog?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal">
+                <!-- Modal content Matias-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="player-video11" width="100%" height="80%" src="https://www.youtube.com/embed/NuxGVjQxjL4?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal">
+                <!-- Modal content Biblio-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="player-video12" width="100%" height="80%" src="https://www.youtube.com/embed/hNh3zFeUIyA?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal">
+                <!-- Modal content Andrea-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="player-video13" width="100%" height="80%" src="https://www.youtube.com/embed/PWJ8_xAuxd0?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal">
+                <!-- Modal content Fabri-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="player-video14" width="100%" height="80%" src="https://www.youtube.com/embed/mTko8_sZQAQ?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal">
+                <!-- Modal content Gabriela-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="player-video15" width="100%" height="80%" src="https://www.youtube.com/embed/35Kj_fIKWGI?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal">
+                <!-- Modal content Mahiara-->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe id="player-video16" width="100%" height="80%" src="https://www.youtube.com/embed/K0LeSMUiOcE?version=3&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>  
+    <section id="eventos">
+        <div class="container">
+            <h2 class="titulo-grande">Álbumes de eventos</h2>
+            <div class="grid-galeria">
+                <div class="first image fit">
+                    <a class="overlay-gallery"  href="https://www.flickr.com/photos/comunicacionfcea/albums/72177720300059462">
+                        <img src="assets/img/ev01.png" alt="">
+                    </a>
+                    <p class="caption-eventos">Enseñar aprendiendo, 30 años de Cursos de Economía del Uruguay (1992 – 2021)</p>
+                </div>
+                <div class="second image fit">
+                   <a class="overlay-gallery" href="https://www.flickr.com/photos/comunicacionfcea/albums/72177720300325026">
+                        <img src="assets/img/ev02.png" alt="">
+                   </a>                                    
+                    <p class="caption-eventos">Homenaje a docentes de FCEA</p>
+                </div>
+                <div class="third image fit">
+                    <a class="overlay-gallery" href="https://www.flickr.com/photos/comunicacionfcea/albums/72177720299778158">
+                        <img src="assets/img/ev03.png" alt="">
+                    </a>
+                    <p class="caption-eventos">Hacia el Premio Innovación PwC Uruguay 2022</p>
+                </div>
+                <div class="first image fit">
+                    <a class="overlay-gallery" href="https://www.flickr.com/photos/comunicacionfcea/albums/72177720297882149">
+                        <img src="assets/img/ev04.png" alt="">
+                    </a>
+                    <p class="caption-eventos">Homenaje a docentes de FCEA</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer id="footer">
         <div class="container">
             <ul class="icons">

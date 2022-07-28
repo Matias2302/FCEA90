@@ -65,9 +65,37 @@ btn[7].onclick = function() {
 btn[8].onclick = function() {
     modal[8].style.display = "block";
 }
-
+//Natalia
+btn[9].onclick = function() {
+    modal[9].style.display = "block";
+}
+//Matías
+btn[10].onclick = function() {
+    modal[10].style.display = "block";
+}
+//Biblio
+btn[11].onclick = function() {
+    modal[11].style.display = "block";
+}
+//Andrea
+btn[12].onclick = function() {
+    modal[12].style.display = "block";
+}
+//Fabri
+btn[13].onclick = function() {
+    modal[13].style.display = "block";
+}
+//Gabriela
+btn[14].onclick = function() {
+    modal[14].style.display = "block";
+}
+//Mahiara
+btn[15].onclick = function() {
+    modal[15].style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
+
 span[0].onclick = function() {
     modal[0].style.display = "none";    
     document.getElementById("player-video").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
@@ -81,12 +109,14 @@ span[2].onclick = function() {
     document.getElementById("player-video3").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
 }
 span[3].onclick = function() {
-    modal[3].style.display = "none";
+    modal[3].style.display = "none";    
     document.getElementById("player-video4").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+    console.log(modal);
 }
 span[4].onclick = function() {
     modal[4].style.display = "none";
     document.getElementById("player-video5").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+    console.log("holando");
 }
 span[5].onclick = function() {
     modal[5].style.display = "none";
@@ -104,6 +134,41 @@ span[7].onclick = function() {
 span[8].onclick = function() {
     modal[8].style.display = "none";
     document.getElementById("player-video9").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+}
+//natalia
+span[9].onclick = function() {
+    modal[9].style.display = "none";
+    document.getElementById("player-video10").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+}
+//Matías
+span[10].onclick = function() {
+    modal[10].style.display = "none";
+    document.getElementById("player-video11").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+}
+//Biblio
+span[11].onclick = function() {
+    modal[11].style.display = "none";
+    document.getElementById("player-video12").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+}
+//Andrea
+span[12].onclick = function() {
+    modal[12].style.display = "none";
+    document.getElementById("player-video13").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+}
+//Fabri
+span[13].onclick = function() {
+    modal[13].style.display = "none";
+    document.getElementById("player-video14").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+}
+//Gabriela
+span[14].onclick = function() {
+    modal[14].style.display = "none";
+    document.getElementById("player-video15").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+}
+//Mahiara
+span[15].onclick = function() {
+    modal[15].style.display = "none";
+    document.getElementById("player-video16").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
 }
 
 // When the user clicks anywhere outside of the modal, close it
